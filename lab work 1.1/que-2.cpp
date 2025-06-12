@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 bool isLeapYear(int year) {
     if (year % 4 != 0) {
@@ -20,15 +19,15 @@ int main() {
     std::cout << "Enter the second number: ";
     std::cin >> endYear;
 
-    std::vector<int> leapYears;
+   // std::vector<int> leapYears;
     for (int year = startYear; year <= endYear; ++year) {
         if (isLeapYear(year)) {
-            leapYears.push_back(year);
+            //leapYears.push_back(year);
         }
     }
 
     std::cout << "The array is: ";
-    for (size_t i = 0; i < leapYears.size(); ++i) {
+    for (size_t i = 0; i < //leapYears.size(); ++i) {
         std::cout << leapYears[i];
         if (i < leapYears.size() - 1) {
             std::cout << ", ";
