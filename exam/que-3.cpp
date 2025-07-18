@@ -24,13 +24,13 @@ public:
         return area;
     }
 
-    // Pure virtual function — abstraction
+    
     virtual void calculateArea() = 0;
 
-    virtual ~Shape() {} // Virtual destructor
+    virtual ~Shape() {}
 };
 
-// Derived class: Circle
+
 class Circle : public Shape {
 private:
     double radius;
@@ -56,7 +56,7 @@ public:
     }
 };
 
-// Derived class: Rectangle
+
 class Rectangle : public Shape {
 private:
     double length;
@@ -89,8 +89,7 @@ public:
              << ", Area: " << getArea() << endl;
     }
 };
-
-int main() {
+main() {
     Circle c;
     c.setColor("Red");
     c.setRadius(5);

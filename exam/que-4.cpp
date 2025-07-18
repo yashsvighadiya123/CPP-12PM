@@ -44,7 +44,7 @@ public:
     }
 
     void calculateArea() override {
-        const double PI = 3.14159; // Defined locally instead of using <cmath>
+        const double PI = 3.14159; 
         double a = PI * radius * radius;
         setArea(a);
     }

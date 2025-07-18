@@ -20,7 +20,7 @@ public:
     }
 };
 
-// Derived class: Bird
+
 class Bird : public Animal {
 public:
     void sound() override {
@@ -31,8 +31,7 @@ public:
         cout << "Bird flies in the sky." << endl;
     }
 };
-
-int main() {
+ main() {
     Dog* dog = new Dog();
     Bird* bird = new Bird();
 

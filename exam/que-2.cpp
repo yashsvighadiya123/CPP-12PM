@@ -5,7 +5,7 @@ using namespace std;
 		    string name;
 		    double salary;
 		    string designation;
-
+		    
 public:
    void setName(const string& empName) {
         name = empName;
@@ -19,29 +19,25 @@ public:
             cout << "Invalid salary! Salary must be non-negative." << endl;
     }
 
-    // Setter for designation
+    
     void setDesignation(const string& empDesignation) {
         designation = empDesignation;
     }
 
-    // Getter for name
     string getName() const {
         return name;
     }
 
-    // Getter for salary
     double getSalary() const {
         return salary;
     }
 
-    // Getter for designation
     string getDesignation() const {
         return designation;
     }
 };
 
-// Main function to demonstrate encapsulation
-int main() {
+main() {
     Employee emp;
 
     emp.setName("Alice Smith");
@@ -52,7 +48,6 @@ int main() {
     cout << "Name: " << emp.getName() << endl;
     cout << "Salary: $" << emp.getSalary() << endl;
     cout << "Designation: " << emp.getDesignation() << endl;
-
-    
+       
 }
 
